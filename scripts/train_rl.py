@@ -49,7 +49,7 @@ utils.seed(args.seed)
 # Generate environments
 envs = []
 for i in range(args.procs):
-    env = gym.make(args.env)
+    env = gym.make(args.env, disable_env_checker=True)
     env.seed(100 * args.seed + i)
     envs.append(env)
 

@@ -412,7 +412,7 @@ def main(argv):
     (options, args) = parser.parse_args()
 
     # Load the gym environment
-    env = gym.make(options.env)
+    env = gym.make(options.env, disable_env_checker=True)
     env.seed(options.seed)
     for _ in range(options.shift):
         env.reset()
