@@ -3,11 +3,12 @@ channels:
     - pytorch
     - defaults
 dependencies:
-    - python=3.6
-    - pytorch=0.4.1
+    - python
+    - pytorch
     - torchvision
     - pyqt
     - numpy
     - blosc
+    - pandas
     - pip:
         - gym
